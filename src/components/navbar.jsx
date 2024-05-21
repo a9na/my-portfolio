@@ -78,25 +78,23 @@ const Navbar = () => {
       </div>
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="/">
-          <Image src="/github.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/facebook.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/pinterest.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
+        <Link href="https://www.linkedin.com/in/ana-novkovic/">
           <Image src="/linkedin.png" alt="" width={24} height={24} />
         </Link>
+        <Link href="https://github.com/a9na">
+          <Image src="/github.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="https://www.goodreads.com/user/show/101703919-ana">
+          <Image src="/goodreads.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="https://x.com/anaiscoding">
+          <Image src="/x.png" alt="" width={24} height={24} />
+        </Link>
+        <Link href="https://www.strava.com/athletes/113486741">
+          <Image src="/strava.png" alt="" width={24} height={24} />
+        </Link>
       </div>
-      {/* RESPONSIVE MENU */}
       <div className="md:hidden">
-        {/* MENU BUTTON */}
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
           onClick={() => setOpen((prev) => !prev)}
@@ -117,7 +115,6 @@ const Navbar = () => {
             className="w-10 h-1 bg-black rounded origin-left"
           ></motion.div>
         </button>
-        {/* MENU LIST */}
         {open && (
           <motion.div
             variants={listVariants}
