@@ -10,44 +10,40 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "My Portfolio",
     desc: "",
-    img: "",
-    link: "",
+    link: "https://github.com/a9na/my-portfolio",
   },
 {
     id: 2,
     color: "from-blue-300 to-violet-300",
     title: "Carshop",
     desc: "Built a Vue.js ecommerce application to showcase a car shop's services and offerings",
-    img: "",
-    link: "",
+    link: "https://github.com/a9na/carshop-web",
     },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
     title: "carshopV2",
     desc: "Rebuilt the car shop using Quasar framework",
-    img: "",
-    link: "",
+    link: "https://github.com/a9na/carshop-quasar-app",
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
     title: "fiscus",
     desc: "Developed a budget and expense tracking app",
-    img: "",
-    link: "",
+    //img: "",
+    link: "https://github.com/a9na/fiscus",
   },
   {
     id: 5,
     color: "from-purple-300 to-red-300",
     title: "CrossyRoad",
-    desc: "",
-    img: "Designed and developed my own simple game",
-    link: "",
+    desc: "Designed and developed my own simple game",
+    link: "https://github.com/a9na/CrossyRoad",
   },
 ];
 
-const PortfolioPage = () => {
+const ProjectsPage = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
@@ -76,9 +72,9 @@ const PortfolioPage = () => {
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
+                  {/*<div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
                     <Image src={item.img} alt="" fill />
-                  </div>
+            </div> */}
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
@@ -124,4 +120,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default ProjectsPage;

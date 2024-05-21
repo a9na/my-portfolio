@@ -3,6 +3,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const links = [
+  { url: "/projects", title: "Projects" },
+  { url: "/contact", title: "Contact" },
+];
+
+
 const Homepage = () => {
   return (
     <motion.div
@@ -11,7 +17,7 @@ const Homepage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row px-12 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         <div className="flex items-center justify-center h-1/4 md:h-1/2 lg:w-1/4 relative rounded-lg overflow-hidden mx-auto">
           <Image src="/my_photo.jpeg" alt="" fill className="object-contain" />
         </div>
@@ -24,12 +30,12 @@ const Homepage = () => {
             seamlessly blend. 
           </p>
           <div className="w-full flex gap-4">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
-              View My Work
-            </button>
-            <button className="p-4 rounded-lg ring-1 ring-black">
-              Let's connect
-            </button>
+          <a href="/projects" className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+            View My Work
+          </a>
+          <a href="/contact" className="p-4 rounded-lg ring-1 ring-black">
+             Let's connect
+          </a>
           </div>
         </div>
       </div>
