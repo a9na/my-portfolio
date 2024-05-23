@@ -6,8 +6,6 @@ import { useRef } from "react";
 const AboutPage = () => {
   const containerRef = useRef();
 
-  const { scrollYProgress } = useScroll({ container: containerRef });
-
   const skillRef = useRef();
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
 
