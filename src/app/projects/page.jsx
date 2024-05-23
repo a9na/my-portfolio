@@ -1,6 +1,5 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
@@ -12,13 +11,13 @@ const items = [
     desc: "",
     link: "https://github.com/a9na/my-portfolio",
   },
-{
+  {
     id: 2,
     color: "from-blue-300 to-violet-300",
     title: "Carshop",
     desc: "Built a Vue.js ecommerce application to showcase a car shop's services and offerings",
     link: "https://github.com/a9na/carshop-web",
-    },
+  },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
@@ -31,7 +30,6 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "fiscus",
     desc: "Developed a budget and expense tracking app",
-    //img: "",
     link: "https://github.com/a9na/fiscus",
   },
   {
@@ -74,7 +72,7 @@ const ProjectsPage = () => {
                   </h1>
                   {/*<div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
                     <Image src={item.img} alt="" fill />
-            </div> */}
+                  </div> */}
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>

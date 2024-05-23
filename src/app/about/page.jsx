@@ -14,7 +14,6 @@ const AboutPage = () => {
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
-
   return (
     <motion.div
       className="h-full"
@@ -23,7 +22,7 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:px-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           <div className="flex flex-col gap-12 justify-center">
             <Image
               src="/my_photo.jpeg"
@@ -44,8 +43,8 @@ const AboutPage = () => {
             </p>
             <p>
               Also very actively volunteering in organizations as one of my main
-              life principles is: "The meaning of life is to find your gift.
-              The purpose of life is to give it away."
+              life principles is: &quot;The meaning of life is to find your gift.
+              The purpose of life is to give it away.&quot;
             </p>
             <span className="italic">
               Open for full-stack development and software engineering roles.
@@ -161,7 +160,6 @@ const AboutPage = () => {
             </motion.svg>
           </div>
 
-
           <div className="flex flex-col gap-12 justify-center pb-48" ref={experienceRef}>
             <motion.h1
               initial={{ x: "-300px" }}
@@ -202,25 +200,25 @@ const AboutPage = () => {
           </div>
 
           <div className="flex flex-col gap-12 justify-between h-82">            
-          <h1 className="font-bold text-2xl">
+            <h1 className="font-bold text-2xl">
               EDUCATION
             </h1>
-              <h2>Faculty of Electrical Engineering and Computer Science Osijek</h2>
-              <p className="text-lg">
-                <div className="font-bold">Bachelor of technology in Computer Science</div>
-                Relevant courses: Programming in Java; Data Structures and Algorithms; Information Systems 
-                and Computer Networks; Operating Systems; Database Management Systems
-              </p>
-              <h2>CS50</h2>
-              <p className="text-lg">
-                <div className="font-bold">Harvard University's introduction to the intellectual enterprises of computer science and 
-                the art of programming.</div>
-                Languages include C, Python, SQL, and JavaScript as well as CSS and HTML.
-              </p>
+            <h2>Faculty of Electrical Engineering and Computer Science Osijek</h2>
+            <p className="text-lg">
+              <div className="font-bold">Bachelor of technology in Computer Science</div>
+              Relevant courses: Programming in Java; Data Structures and Algorithms; Information Systems 
+              and Computer Networks; Operating Systems; Database Management Systems
+            </p>
+            <h2>CS50</h2>
+            <p className="text-lg">
+              <div className="font-bold">Harvard University&apos;s introduction to the intellectual enterprises of computer science and 
+              the art of programming.</div>
+              Languages include C, Python, SQL, and JavaScript as well as CSS and HTML.
+            </p>
           </div>
 
           <div className="flex flex-col gap-12 justify-between h-82">            
-            <h1 className="font-bold text-2xl">HOBBIES & INTERESTS</h1>
+            <h1 className="font-bold text-2xl">HOBBIES &amp; INTERESTS</h1>
             <div className="p-4 text-sm cursor-pointer bg-black text-white">
               Volunteering
             </div>
@@ -237,9 +235,9 @@ const AboutPage = () => {
               <div>I write reviews regularly at <a href="https://www.goodreads.com/user/show/101703919-ana">Goodreads</a></div>
               <div>Also posting financial advice at <a href="https://www.instagram.com/fiscus.cro/">Instagram</a></div>
             </div>
-            </div>
           </div>
-        </div>          
+        </div>
+      </div>          
     </motion.div>
   );
 };
