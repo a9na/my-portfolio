@@ -6,6 +6,7 @@ const nextConfig = {
   images: {
     loader: 'akamai',
     path: '',
+    unoptimized: true, // Disables Image Optimization API for static export
     remotePatterns: [
       {
         protocol: "https",

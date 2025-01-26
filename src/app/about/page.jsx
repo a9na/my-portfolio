@@ -62,7 +62,7 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-2 flex-wrap"
             >
-              <div>Languages:</div>
+              <div>SWE Stack</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 C
               </div>
@@ -72,13 +72,27 @@ const AboutPage = () => {
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 JAVASCRIPT
               </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                PYTHON
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                VUE.JS
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                REACT
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                QUASAR
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                SCSS
+              </div>
             </motion.div>
             <motion.div
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
-              className="flex gap-2 flex-wrap"
+              className="flex gap-1 flex-wrap"
             >
-              <div>Technologies:</div>
               <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 VUE.JS
               </div>
@@ -216,22 +230,11 @@ const AboutPage = () => {
           </div>
 
           <div className="flex flex-col gap-12 justify-between h-82">            
-            <h1 className="font-bold text-2xl">HOBBIES &amp; INTERESTS</h1>
+            <h1 className="font-bold text-2xl">HOBBIES</h1>
             <div className="p-4 text-sm cursor-pointer bg-black text-white">
-              Volunteering
-            </div>
-            <div className="p-4 text-sm cursor-pointer bg-black text-white">
-              Language learning
-              <div>I speak English (C2), German (B2) and Italian (B2)</div>
-            </div>
-            <div className="p-4 text-sm cursor-pointer bg-black text-white">
-              Sports 
-              <div>Volleyball, Running, Mountain climbing, Gym</div>
-            </div>
-            <div className="p-4 text-sm cursor-pointer bg-black text-white">
-              Reading and Writing 
-              <div>I write reviews regularly at <a href="https://www.goodreads.com/user/show/101703919-ana">Goodreads</a></div>
-              <div>Also posting financial advice at <a href="https://www.instagram.com/fiscus.cro/">Instagram</a></div>
+              
+          <i>reading</i> · <i>writing</i> · <i>volounteering</i> · <i>sports (volleyball 10 years, track & field)</i> · <i>guitar</i> · <i>gaming</i> · 
+          <i>book reviewing/blogging</i> · <i>art</i> · <i>journaling</i>
             </div>
           </div>
         </div>
