@@ -49,14 +49,6 @@ const AboutPage = () => {
             </span>
           </div>
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
-            <motion.h1
-              initial={{ x: "-300px" }}
-              animate={isSkillRefInView ? { x: 0 } : {}}
-              transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
-            >
-              MY SKILLSET
-            </motion.h1>
             <motion.div
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
@@ -217,15 +209,8 @@ const AboutPage = () => {
             </h1>
             <h2>Faculty of Electrical Engineering and Computer Science Osijek</h2>
             <p className="text-lg">
-              <div className="font-bold">Bachelor of technology in Computer Science</div>
-              Relevant courses: Programming in Java; Data Structures and Algorithms; Information Systems 
-              and Computer Networks; Operating Systems; Database Management Systems
-            </p>
-            <h2>CS50</h2>
-            <p className="text-lg">
-              <div className="font-bold">Harvard University&apos;s introduction to the intellectual enterprises of computer science and 
-              the art of programming.</div>
-              Languages include C, Python, SQL, and JavaScript as well as CSS and HTML.
+              <div className="font-bold">Bachelor<>&apos;</>s degree, Computer Science</div>
+              Relevant coursework: Programming I & II, Java Programming, Algorithms and Data Structures, Databases, Operating Systems, Software Engineering, Web Programming, Mobile Application Development, Information Security, Applied Machine Learning, Mathematical Statistics
             </p>
           </div>
 
